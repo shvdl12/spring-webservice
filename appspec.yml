@@ -1,8 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source:  s3://spring-webservice-deploy/springboot-webservice.zip
+  - source:  /
     destination: /home/ec2-user/travis/build/
+    overwrite: yes
 
 hooks:
   AfterInstall: # 배포가 끝나면 아래 명령어를 실행
